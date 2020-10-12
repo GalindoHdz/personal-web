@@ -1,0 +1,12 @@
+@use 'header.scss';
+@use 'footer.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url(../fonts/Consolas.TTF);
+}
