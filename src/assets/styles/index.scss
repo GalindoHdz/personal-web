@@ -1,5 +1,6 @@
 @use 'header.scss';
 @use 'footer.scss';
+@use 'home.scss';
 
 * {
     margin: 0;
@@ -9,4 +10,21 @@
 @font-face {
     font-family: 'Consolas';
     src: url(../fonts/Consolas.TTF);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2769e3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2054b4;
 }

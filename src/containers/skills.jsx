@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const Skills = () => {
-    return <div>skills</div>;
+    return <div className='container'>skills</div>;
 };

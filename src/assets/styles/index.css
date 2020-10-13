@@ -1,116 +1,1885 @@
-.header_day {
-  width: 100%;
-  height: 65px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #ffffffff;
-  box-shadow: 0px 2px 10px 5px #bcbcbc;
-}
-.header_day .header_logo {
-  width: 20%;
-  height: 100%;
-  padding: 0 0 0 75px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-}
-.header_day .header_logo img {
-  margin: 0 30px 0 0;
-  width: 40px;
-  height: 45px;
-}
-.header_day .header_logo p {
-  font-family: "Consolas";
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  color: #717171;
-}
-.header_day .header_buttons {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.header_day .header_buttons a {
-  font-family: "Consolas";
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  color: #717171;
-}
-.header_day .header_buttons .header_button_active {
-  font-weight: 900;
-  color: #2769e3;
-}
-.header_day .header_buttons button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  color: #717171;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  transition: 350ms;
-}
-.header_day .header_buttons button:hover,
-.header_day .header_buttons button:focus {
-  color: #2769e3;
-  transition: 350ms;
-}
+@media only screen and (min-width: 769px) {
+  .header_light {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffffff;
+    box-shadow: 0px 2px 10px 5px #bcbcbc;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .header_light .header_logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_light .header_logo img {
+    width: 40px;
+    height: 45px;
+  }
+  .header_light .header_logo button {
+    display: none;
+  }
+  .header_light .header_buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .header_light .header_buttons a {
+    font-family: "Consolas";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #717171;
+  }
+  .header_light .header_buttons .header_button_active {
+    font-weight: 900;
+    color: #2769e3;
+  }
+  .header_light .header_buttons button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #717171;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .header_light .header_buttons button:hover,
+.header_light .header_buttons button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_light .header_side {
+    display: none;
+  }
 
-.footer_day {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffffff;
-  box-shadow: 0px -2px 10px 5px #bcbcbc;
+  .header_dark {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #121416;
+    box-shadow: 0px 2px 10px 5px #212529;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .header_dark .header_logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_dark .header_logo img {
+    width: 40px;
+    height: 45px;
+  }
+  .header_dark .header_logo button {
+    display: none;
+  }
+  .header_dark .header_buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .header_dark .header_buttons a {
+    font-family: "Consolas";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #bbbbbb;
+  }
+  .header_dark .header_buttons .header_button_active {
+    font-weight: 900;
+    color: #2769e3;
+  }
+  .header_dark .header_buttons button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #bbbbbb;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .header_dark .header_buttons button:hover,
+.header_dark .header_buttons button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_dark .header_side {
+    display: none;
+  }
 }
-.footer_day .footer_buttons {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.footer_day .footer_buttons a {
-  margin: 0 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  color: #717171;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  transition: 350ms;
-}
-.footer_day .footer_buttons a:hover,
-.footer_day .footer_buttons a:focus {
-  color: #2769e3;
-  transition: 350ms;
-}
-.footer_day .footer_copy {
-  width: 100%;
-  height: 40%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  font-family: "Consolas";
-  font-size: 16px;
-  color: #717171;
-}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .header_light {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffffff;
+    box-shadow: 0px 2px 10px 5px #bcbcbc;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .header_light .header_logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_light .header_logo img {
+    width: 40px;
+    height: 45px;
+  }
+  .header_light .header_logo button {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #717171;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .header_light .header_logo button:hover,
+.header_light .header_logo button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_light .header_buttons {
+    display: none;
+  }
+  .header_light .header_side {
+    position: absolute;
+    top: 65px;
+    width: 150px;
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffff;
+    box-shadow: 2px 15px 10px 5px #bcbcbc;
+    overflow: auto;
+  }
+  .header_light .header_side a {
+    width: calc(100% - 40px);
+    height: 40px;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #717171;
+  }
+  .header_light .header_side .header_button_active {
+    background-color: #2769e3;
+    font-weight: 900;
+    color: #ffffffff;
+  }
+  .header_light .header_side button {
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #717171;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .header_light .header_side button:hover,
+.header_light .header_side button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_light .no_show {
+    left: -167px;
+    transition: 350ms;
+  }
+  .header_light .show {
+    left: 0;
+    transition: 350ms;
+  }
 
+  .header_dark {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #121416;
+    box-shadow: 0px 2px 10px 5px #212529ff;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .header_dark .header_logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_dark .header_logo img {
+    width: 40px;
+    height: 45px;
+  }
+  .header_dark .header_logo button {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #bbbbbb;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .header_dark .header_logo button:hover,
+.header_dark .header_logo button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_dark .header_buttons {
+    display: none;
+  }
+  .header_dark .header_side {
+    position: absolute;
+    top: 65px;
+    width: 150px;
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    background-color: #121416;
+    box-shadow: 2px 15px 10px 5px #212529ff;
+    overflow: auto;
+  }
+  .header_dark .header_side a {
+    width: calc(100% - 40px);
+    height: 40px;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #bbbbbb;
+  }
+  .header_dark .header_side .header_button_active {
+    background-color: #2769e3;
+    font-weight: 900;
+    color: #121416;
+  }
+  .header_dark .header_side button {
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #bbbbbb;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .header_dark .header_side button:hover,
+.header_dark .header_side button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_dark .no_show {
+    left: -167px;
+    transition: 350ms;
+  }
+  .header_dark .show {
+    left: 0;
+    transition: 350ms;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header_light {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffffff;
+    box-shadow: 0px 2px 10px 5px #bcbcbc;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .header_light .header_logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_light .header_logo img {
+    width: 40px;
+    height: 45px;
+  }
+  .header_light .header_logo button {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #717171;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .header_light .header_logo button:hover,
+.header_light .header_logo button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_light .header_buttons {
+    display: none;
+  }
+  .header_light .header_side {
+    position: absolute;
+    top: 65px;
+    width: 150px;
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffff;
+    box-shadow: 2px 15px 10px 5px #bcbcbc;
+    overflow: auto;
+  }
+  .header_light .header_side a {
+    width: calc(100% - 40px);
+    height: 40px;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #717171;
+  }
+  .header_light .header_side .header_button_active {
+    background-color: #2769e3;
+    font-weight: 900;
+    color: #ffffffff;
+  }
+  .header_light .header_side button {
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #717171;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .header_light .header_side button:hover,
+.header_light .header_side button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_light .no_show {
+    left: -167px;
+    transition: 350ms;
+  }
+  .header_light .show {
+    left: 0;
+    transition: 350ms;
+  }
+
+  .header_dark {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #121416;
+    box-shadow: 0px 2px 10px 5px #212529ff;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .header_dark .header_logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_dark .header_logo img {
+    width: 40px;
+    height: 45px;
+  }
+  .header_dark .header_logo button {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #bbbbbb;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .header_dark .header_logo button:hover,
+.header_dark .header_logo button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_dark .header_buttons {
+    display: none;
+  }
+  .header_dark .header_side {
+    position: absolute;
+    top: 65px;
+    width: 150px;
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    background-color: #121416;
+    box-shadow: 2px 15px 10px 5px #212529ff;
+    overflow: auto;
+  }
+  .header_dark .header_side a {
+    width: calc(100% - 40px);
+    height: 40px;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #bbbbbb;
+  }
+  .header_dark .header_side .header_button_active {
+    background-color: #2769e3;
+    font-weight: 900;
+    color: #121416;
+  }
+  .header_dark .header_side button {
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #bbbbbb;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .header_dark .header_side button:hover,
+.header_dark .header_side button:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .header_dark .no_show {
+    left: -167px;
+    transition: 350ms;
+  }
+  .header_dark .show {
+    left: 0;
+    transition: 350ms;
+  }
+}
+@media screen and (min-width: 426px) {
+  .footer_light {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffff;
+    box-shadow: 0px -2px 10px 5px #bcbcbc;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .footer_light .footer_buttons {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_light .footer_buttons a {
+    margin: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #717171;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .footer_light .footer_buttons a:hover,
+.footer_light .footer_buttons a:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .footer_light .footer_copy {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #717171;
+  }
+
+  .footer_dark {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #121416;
+    box-shadow: 0px -2px 10px 5px #212529ff;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .footer_dark .footer_buttons {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_dark .footer_buttons a {
+    margin: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #bbbbbb;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .footer_dark .footer_buttons a:hover,
+.footer_dark .footer_buttons a:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .footer_dark .footer_copy {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #bbbbbb;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer_light {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffff;
+    box-shadow: 0px -2px 10px 5px #bcbcbc;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .footer_light .footer_buttons {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_light .footer_buttons a {
+    margin: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #717171;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .footer_light .footer_buttons a:hover,
+.footer_light .footer_buttons a:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .footer_light .footer_copy {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Consolas";
+    font-size: 14px;
+    color: #717171;
+  }
+
+  .footer_dark {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #121416;
+    box-shadow: 0px -2px 10px 5px #212529ff;
+    z-index: 10;
+    transition: 500ms;
+  }
+  .footer_dark .footer_buttons {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_dark .footer_buttons a {
+    margin: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #bbbbbb;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 350ms;
+  }
+  .footer_dark .footer_buttons a:hover,
+.footer_dark .footer_buttons a:focus {
+    color: #2769e3;
+    transition: 350ms;
+  }
+  .footer_dark .footer_copy {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Consolas";
+    font-size: 14px;
+    color: #bbbbbb;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .home_light {
+    width: 100%;
+    height: calc(100% - 65px);
+    padding: 65px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffffff;
+    z-index: 0;
+    transition: 500ms;
+  }
+  .home_light .home_presentation {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .home_light .home_presentation .presentation_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_presentation .presentation_text div {
+    margin: 0 0 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_light .home_presentation .presentation_text div .presentation {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #717171;
+  }
+  .home_light .home_presentation .presentation_text div .name {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 26px;
+    color: #717171;
+  }
+  .home_light .home_presentation .presentation_text div .profession {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    color: #717171;
+  }
+  .home_light .home_presentation .presentation_text div button {
+    width: 130px;
+    height: 35px;
+    margin: 20px 0;
+    font-family: "Consolas";
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #ffffffff;
+    background-color: #2769e3;
+    transition: 350ms;
+  }
+  .home_light .home_presentation .presentation_text div button:hover,
+.home_light .home_presentation .presentation_text div button:focus {
+    background-color: #5c88da;
+    transition: 350ms;
+  }
+  .home_light .home_presentation .presentation_image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_light .home_presentation .presentation_image img {
+    width: 300px;
+    height: auto;
+    margin: 0 0 0 -100px;
+  }
+  .home_light .home_profile {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .home_light .home_profile .profile_text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_profile .profile_text div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_light .home_profile .profile_text div .profile_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    font-weight: 900;
+    color: #717171;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_profile .profile_text div p {
+    width: 100%;
+    margin: 5px 5%;
+    font-family: "Consolas";
+    font-size: 18px;
+    color: #717171;
+  }
+  .home_light .home_profile .perfil_image {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_light .home_profile .perfil_image img {
+    width: 300px;
+    height: auto;
+  }
+  .home_light .home_experience {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_light .home_experience .experience_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    font-weight: 900;
+    color: #717171;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_experience .experience_data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_light .home_experience .experience_data .data_card {
+    width: calc((100% - 180px) / 3);
+    height: 160px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px 5px #bcbcbc;
+  }
+  .home_light .home_experience .experience_data .data_card .data_title {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .home_light .home_experience .experience_data .data_card .data_time {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #2769e3;
+  }
+  .home_light .home_experience .experience_data .data_card .data_text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: "Consolas";
+    font-size: 15px;
+    color: #717171;
+    overflow-y: auto;
+  }
+
+  .home_dark {
+    width: 100%;
+    height: calc(100% - 65px);
+    padding: 65px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #272b2f;
+    z-index: 0;
+    transition: 500ms;
+  }
+  .home_dark .home_presentation {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .home_dark .home_presentation .presentation_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_presentation .presentation_text div {
+    margin: 0 0 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_dark .home_presentation .presentation_text div .presentation {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_presentation .presentation_text div .name {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 26px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_presentation .presentation_text div .profession {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_presentation .presentation_text div button {
+    width: 130px;
+    height: 35px;
+    margin: 20px 0;
+    font-family: "Consolas";
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #2769e3;
+    transition: 350ms;
+  }
+  .home_dark .home_presentation .presentation_text div button:hover,
+.home_dark .home_presentation .presentation_text div button:focus {
+    background-color: #5c88da;
+    transition: 350ms;
+  }
+  .home_dark .home_presentation .presentation_image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_dark .home_presentation .presentation_image img {
+    width: 300px;
+    height: auto;
+    margin: 0 0 0 -100px;
+  }
+  .home_dark .home_profile {
+    width: 100%;
+    margin: 0 0 50px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .home_dark .home_profile .profile_text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_profile .profile_text div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_dark .home_profile .profile_text div .profile_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    font-weight: 900;
+    color: #bbbbbb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_profile .profile_text div p {
+    width: 100%;
+    margin: 5px 5%;
+    font-family: "Consolas";
+    font-size: 18px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_profile .perfil_image {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_dark .home_profile .perfil_image img {
+    width: 300px;
+    height: auto;
+  }
+  .home_dark .home_experience {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_dark .home_experience .experience_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    font-weight: 900;
+    color: #bbbbbb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_experience .experience_data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_dark .home_experience .experience_data .data_card {
+    width: calc((100% - 180px) / 3);
+    height: 160px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px 5px #212529;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_title {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 18px;
+    font-weight: 700;
+    color: #bbbbbb;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_time {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #2769e3;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: "Consolas";
+    font-size: 15px;
+    color: #bbbbbb;
+    overflow-y: auto;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .home_light {
+    width: 100%;
+    height: calc(100% - 65px);
+    padding: 65px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffffff;
+    z-index: 0;
+    transition: 500ms;
+  }
+  .home_light .home_presentation {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+  }
+  .home_light .home_presentation .presentation_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_presentation .presentation_text div {
+    margin: 0 0 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_light .home_presentation .presentation_text div .presentation {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #717171;
+  }
+  .home_light .home_presentation .presentation_text div .name {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 26px;
+    color: #717171;
+  }
+  .home_light .home_presentation .presentation_text div .profession {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    color: #717171;
+  }
+  .home_light .home_presentation .presentation_text div button {
+    width: 130px;
+    height: 35px;
+    margin: 20px 0;
+    font-family: "Consolas";
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #ffffffff;
+    background-color: #2769e3;
+    transition: 350ms;
+  }
+  .home_light .home_presentation .presentation_text div button:hover,
+.home_light .home_presentation .presentation_text div button:focus {
+    background-color: #5c88da;
+    transition: 350ms;
+  }
+  .home_light .home_presentation .presentation_image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_light .home_presentation .presentation_image img {
+    width: 200px;
+    height: auto;
+  }
+  .home_light .home_profile {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+  }
+  .home_light .home_profile .profile_text {
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_light .home_profile .profile_text div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_light .home_profile .profile_text div .profile_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 20px;
+    font-weight: 900;
+    color: #717171;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_profile .profile_text div p {
+    width: 100%;
+    margin: 5px 5%;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #717171;
+  }
+  .home_light .home_profile .perfil_image {
+    display: none;
+  }
+  .home_light .home_experience {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_light .home_experience .experience_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 20px;
+    font-weight: 900;
+    color: #717171;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_experience .experience_data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home_light .home_experience .experience_data .data_card {
+    width: calc((100% - 180px) / 2);
+    height: 160px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px 5px #bcbcbc;
+  }
+  .home_light .home_experience .experience_data .data_card .data_title {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .home_light .home_experience .experience_data .data_card .data_time {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #2769e3;
+  }
+  .home_light .home_experience .experience_data .data_card .data_text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: "Consolas";
+    font-size: 15px;
+    color: #717171;
+    overflow-y: auto;
+  }
+
+  .home_dark {
+    width: 100%;
+    height: calc(100% - 65px);
+    padding: 65px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #272b2f;
+    z-index: 0;
+    transition: 500ms;
+  }
+  .home_dark .home_presentation {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+  }
+  .home_dark .home_presentation .presentation_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_presentation .presentation_text div {
+    margin: 0 0 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_dark .home_presentation .presentation_text div .presentation {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_presentation .presentation_text div .name {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 26px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_presentation .presentation_text div .profession {
+    width: 100%;
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_presentation .presentation_text div button {
+    width: 130px;
+    height: 35px;
+    margin: 20px 0;
+    font-family: "Consolas";
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #2769e3;
+    transition: 350ms;
+  }
+  .home_dark .home_presentation .presentation_text div button:hover,
+.home_dark .home_presentation .presentation_text div button:focus {
+    background-color: #5c88da;
+    transition: 350ms;
+  }
+  .home_dark .home_presentation .presentation_image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_dark .home_presentation .presentation_image img {
+    width: 200px;
+    height: auto;
+  }
+  .home_dark .home_profile {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+  }
+  .home_dark .home_profile .profile_text {
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_dark .home_profile .profile_text div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_dark .home_profile .profile_text div .profile_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 20px;
+    font-weight: 900;
+    color: #bbbbbb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_profile .profile_text div p {
+    width: 100%;
+    margin: 5px 5%;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_profile .perfil_image {
+    display: none;
+  }
+  .home_dark .home_experience {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_dark .home_experience .experience_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 20px;
+    font-weight: 900;
+    color: #bbbbbb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_experience .experience_data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home_dark .home_experience .experience_data .data_card {
+    width: calc((100% - 180px) / 2);
+    height: 160px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px 5px #212529;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_title {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 18px;
+    font-weight: 700;
+    color: #bbbbbb;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_time {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #2769e3;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: "Consolas";
+    font-size: 15px;
+    color: #bbbbbb;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home_light {
+    width: 100%;
+    height: calc(100% - 65px);
+    padding: 65px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffffff;
+    z-index: 0;
+    transition: 500ms;
+  }
+  .home_light .home_presentation {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home_light .home_presentation .presentation_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .home_light .home_presentation .presentation_text div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home_light .home_presentation .presentation_text div .presentation {
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #717171;
+    text-align: center;
+  }
+  .home_light .home_presentation .presentation_text div .name {
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 26px;
+    color: #717171;
+    text-align: center;
+  }
+  .home_light .home_presentation .presentation_text div .profession {
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    color: #717171;
+    text-align: center;
+  }
+  .home_light .home_presentation .presentation_text div button {
+    width: 130px;
+    height: 35px;
+    margin: 20px 0;
+    font-family: "Consolas";
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #ffffffff;
+    background-color: #2769e3;
+    transition: 350ms;
+  }
+  .home_light .home_presentation .presentation_text div button:hover,
+.home_light .home_presentation .presentation_text div button:focus {
+    background-color: #5c88da;
+    transition: 350ms;
+  }
+  .home_light .home_presentation .presentation_image {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+  .home_light .home_presentation .presentation_image img {
+    width: 200px;
+    height: auto;
+  }
+  .home_light .home_profile {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+  }
+  .home_light .home_profile .profile_text {
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_light .home_profile .profile_text div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_light .home_profile .profile_text div .profile_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 20px;
+    font-weight: 900;
+    color: #717171;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_profile .profile_text div p {
+    width: 100%;
+    margin: 5px 5%;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #717171;
+  }
+  .home_light .home_profile .perfil_image {
+    display: none;
+  }
+  .home_light .home_experience {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_light .home_experience .experience_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 20px;
+    font-weight: 900;
+    color: #717171;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_light .home_experience .experience_data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home_light .home_experience .experience_data .data_card {
+    width: calc(100% - 30px);
+    height: 160px;
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px 5px #bcbcbc;
+  }
+  .home_light .home_experience .experience_data .data_card .data_title {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .home_light .home_experience .experience_data .data_card .data_time {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #2769e3;
+  }
+  .home_light .home_experience .experience_data .data_card .data_text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: "Consolas";
+    font-size: 15px;
+    color: #717171;
+    overflow-y: auto;
+  }
+
+  .home_dark {
+    width: 100%;
+    height: calc(100% - 65px);
+    padding: 65px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #272b2f;
+    z-index: 0;
+    transition: 500ms;
+  }
+  .home_dark .home_presentation {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home_dark .home_presentation .presentation_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .home_dark .home_presentation .presentation_text div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home_dark .home_presentation .presentation_text div .presentation {
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #bbbbbb;
+    text-align: center;
+  }
+  .home_dark .home_presentation .presentation_text div .name {
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 26px;
+    color: #bbbbbb;
+    text-align: center;
+  }
+  .home_dark .home_presentation .presentation_text div .profession {
+    margin: 2px 0;
+    font-family: "Consolas";
+    font-size: 22px;
+    color: #bbbbbb;
+    text-align: center;
+  }
+  .home_dark .home_presentation .presentation_text div button {
+    width: 130px;
+    height: 35px;
+    margin: 20px 0;
+    font-family: "Consolas";
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #2769e3;
+    transition: 350ms;
+  }
+  .home_dark .home_presentation .presentation_text div button:hover,
+.home_dark .home_presentation .presentation_text div button:focus {
+    background-color: #5c88da;
+    transition: 350ms;
+  }
+  .home_dark .home_presentation .presentation_image {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+  .home_dark .home_presentation .presentation_image img {
+    width: 200px;
+    height: auto;
+  }
+  .home_dark .home_profile {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+  }
+  .home_dark .home_profile .profile_text {
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_dark .home_profile .profile_text div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home_dark .home_profile .profile_text div .profile_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 20px;
+    font-weight: 900;
+    color: #bbbbbb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_profile .profile_text div p {
+    width: 100%;
+    margin: 5px 5%;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #bbbbbb;
+  }
+  .home_dark .home_profile .perfil_image {
+    display: none;
+  }
+  .home_dark .home_experience {
+    width: 100%;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_dark .home_experience .experience_title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-family: "Consolas";
+    font-size: 20px;
+    font-weight: 900;
+    color: #bbbbbb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_dark .home_experience .experience_data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home_dark .home_experience .experience_data .data_card {
+    width: calc(100% - 30px);
+    height: 160px;
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px 5px #212529;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_title {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 18px;
+    font-weight: 700;
+    color: #bbbbbb;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_time {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Consolas";
+    font-size: 16px;
+    color: #2769e3;
+  }
+  .home_dark .home_experience .experience_data .data_card .data_text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: "Consolas";
+    font-size: 15px;
+    color: #bbbbbb;
+    overflow-y: auto;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -119,6 +1888,22 @@
 @font-face {
   font-family: "Consolas";
   src: url(../fonts/Consolas.TTF);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2769e3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2054b4;
 }
 
 /*# sourceMappingURL=index.css.map */

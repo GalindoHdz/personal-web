@@ -1,0 +1,1340 @@
+@media only screen and (min-width: 769px) {
+    .home_light {
+        $primary-color: #ffffffff;
+        $shadow: #bcbcbc;
+        $letter-color: #717171;
+        $letter-secundary-color: #000000;
+        $letter-select-color: #2769e3;
+        $button-color: #2769e3;
+        $button-select-color: #5c88da;
+        $letter: 'Consolas';
+
+        width: 100%;
+        height: calc(100% - 65px);
+        padding: 65px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $primary-color;
+        z-index: 0;
+        transition: 500ms;
+
+        .home_presentation {
+            width: 100%;
+            height: 300px;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: row;
+
+            .presentation_text {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    margin: 0 0 0 15%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .presentation {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                    }
+
+                    .name {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 26px;
+                        color: $letter-color;
+                    }
+
+                    .profession {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 22px;
+                        color: $letter-color;
+                    }
+
+                    button {
+                        width: 130px;
+                        height: 35px;
+                        margin: 20px 0;
+                        font-family: $letter;
+                        font-size: 15px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: none;
+                        outline: none;
+                        color: $primary-color;
+                        background-color: $button-color;
+                        transition: 350ms;
+                    }
+
+                    button:hover,
+                    button:focus {
+                        background-color: $button-select-color;
+                        transition: 350ms;
+                    }
+                }
+            }
+
+            .presentation_image {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 300px;
+                    height: auto;
+                    margin: 0 0 0 -100px;
+                }
+            }
+        }
+
+        .home_profile {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: row-reverse;
+
+            .profile_text {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .profile_title {
+                        width: 100%;
+                        margin: 0 0 20px 0;
+                        font-family: $letter;
+                        font-size: 22px;
+                        font-weight: 900;
+                        color: $letter-color;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin: 5px 5%;
+                        font-family: $letter;
+                        font-size: 18px;
+                        color: $letter-color;
+                    }
+                }
+            }
+
+            .perfil_image {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 300px;
+                    height: auto;
+                }
+            }
+        }
+
+        .home_experience {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .experience_title {
+                width: 100%;
+                margin: 0 0 20px 0;
+                font-family: $letter;
+                font-size: 22px;
+                font-weight: 900;
+                color: $letter-color;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .experience_data {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .data_card {
+                    width: calc((100% - 180px) / 3);
+                    height: 160px;
+                    margin: 10px;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 10px 5px $shadow;
+
+                    .data_title {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $letter-secundary-color;
+                    }
+
+                    .data_time {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-select-color;
+                    }
+
+                    .data_text {
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        font-family: $letter;
+                        font-size: 15px;
+                        color: $letter-color;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .home_dark {
+        $primary-color: #272b2f;
+        $shadow: #212529;
+        $letter-color: #bbbbbb;
+        $letter-secundary-color: #bbbbbb;
+        $letter-select-color: #2769e3;
+        $letter-button: #ffffff;
+        $button-color: #2769e3;
+        $button-select-color: #5c88da;
+        $letter: 'Consolas';
+
+        width: 100%;
+        height: calc(100% - 65px);
+        padding: 65px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $primary-color;
+        z-index: 0;
+        transition: 500ms;
+
+        .home_presentation {
+            width: 100%;
+            height: 300px;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: row;
+
+            .presentation_text {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    margin: 0 0 0 15%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .presentation {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                    }
+
+                    .name {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 26px;
+                        color: $letter-color;
+                    }
+
+                    .profession {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 22px;
+                        color: $letter-color;
+                    }
+
+                    button {
+                        width: 130px;
+                        height: 35px;
+                        margin: 20px 0;
+                        font-family: $letter;
+                        font-size: 15px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: none;
+                        outline: none;
+                        color: $letter-button;
+                        background-color: $button-color;
+                        transition: 350ms;
+                    }
+
+                    button:hover,
+                    button:focus {
+                        background-color: $button-select-color;
+                        transition: 350ms;
+                    }
+                }
+            }
+
+            .presentation_image {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 300px;
+                    height: auto;
+                    margin: 0 0 0 -100px;
+                }
+            }
+        }
+
+        .home_profile {
+            width: 100%;
+            margin: 0 0 50px 0px;
+            display: flex;
+            flex-direction: row-reverse;
+
+            .profile_text {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .profile_title {
+                        width: 100%;
+                        margin: 0 0 20px 0;
+                        font-family: $letter;
+                        font-size: 22px;
+                        font-weight: 900;
+                        color: $letter-color;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin: 5px 5%;
+                        font-family: $letter;
+                        font-size: 18px;
+                        color: $letter-color;
+                    }
+                }
+            }
+
+            .perfil_image {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 300px;
+                    height: auto;
+                }
+            }
+        }
+
+        .home_experience {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .experience_title {
+                width: 100%;
+                margin: 0 0 20px 0;
+                font-family: $letter;
+                font-size: 22px;
+                font-weight: 900;
+                color: $letter-color;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .experience_data {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .data_card {
+                    width: calc((100% - 180px) / 3);
+                    height: 160px;
+                    margin: 10px;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 10px 5px $shadow;
+
+                    .data_title {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $letter-secundary-color;
+                    }
+
+                    .data_time {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-select-color;
+                    }
+
+                    .data_text {
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        font-family: $letter;
+                        font-size: 15px;
+                        color: $letter-color;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .home_light {
+        $primary-color: #ffffffff;
+        $shadow: #bcbcbc;
+        $letter-color: #717171;
+        $letter-secundary-color: #000000;
+        $letter-select-color: #2769e3;
+        $button-color: #2769e3;
+        $button-select-color: #5c88da;
+        $letter: 'Consolas';
+
+        width: 100%;
+        height: calc(100% - 65px);
+        padding: 65px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $primary-color;
+        z-index: 0;
+        transition: 500ms;
+
+        .home_presentation {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+
+            .presentation_text {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    margin: 0 0 0 15%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .presentation {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                    }
+
+                    .name {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 26px;
+                        color: $letter-color;
+                    }
+
+                    .profession {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 22px;
+                        color: $letter-color;
+                    }
+
+                    button {
+                        width: 130px;
+                        height: 35px;
+                        margin: 20px 0;
+                        font-family: $letter;
+                        font-size: 15px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: none;
+                        outline: none;
+                        color: $primary-color;
+                        background-color: $button-color;
+                        transition: 350ms;
+                    }
+
+                    button:hover,
+                    button:focus {
+                        background-color: $button-select-color;
+                        transition: 350ms;
+                    }
+                }
+            }
+
+            .presentation_image {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+
+        .home_profile {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+
+            .profile_text {
+                width: 100%;
+                height: 100%;
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .profile_title {
+                        width: 100%;
+                        margin: 0 0 20px 0;
+                        font-family: $letter;
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: $letter-color;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin: 5px 5%;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                    }
+                }
+            }
+
+            .perfil_image {
+                display: none;
+            }
+        }
+
+        .home_experience {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .experience_title {
+                width: 100%;
+                margin: 0 0 20px 0;
+                font-family: $letter;
+                font-size: 20px;
+                font-weight: 900;
+                color: $letter-color;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .experience_data {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .data_card {
+                    width: calc((100% - 180px) / 2);
+                    height: 160px;
+                    margin: 10px;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 10px 5px $shadow;
+
+                    .data_title {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $letter-secundary-color;
+                    }
+
+                    .data_time {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-select-color;
+                    }
+
+                    .data_text {
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        font-family: $letter;
+                        font-size: 15px;
+                        color: $letter-color;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .home_dark {
+        $primary-color: #272b2f;
+        $shadow: #212529;
+        $letter-color: #bbbbbb;
+        $letter-secundary-color: #bbbbbb;
+        $letter-select-color: #2769e3;
+        $letter-button: #ffffff;
+        $button-color: #2769e3;
+        $button-select-color: #5c88da;
+        $letter: 'Consolas';
+
+        width: 100%;
+        height: calc(100% - 65px);
+        padding: 65px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $primary-color;
+        z-index: 0;
+        transition: 500ms;
+
+        .home_presentation {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+
+            .presentation_text {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    margin: 0 0 0 15%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .presentation {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                    }
+
+                    .name {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 26px;
+                        color: $letter-color;
+                    }
+
+                    .profession {
+                        width: 100%;
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 22px;
+                        color: $letter-color;
+                    }
+
+                    button {
+                        width: 130px;
+                        height: 35px;
+                        margin: 20px 0;
+                        font-family: $letter;
+                        font-size: 15px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: none;
+                        outline: none;
+                        color: $letter-button;
+                        background-color: $button-color;
+                        transition: 350ms;
+                    }
+
+                    button:hover,
+                    button:focus {
+                        background-color: $button-select-color;
+                        transition: 350ms;
+                    }
+                }
+            }
+
+            .presentation_image {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+
+        .home_profile {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+
+            .profile_text {
+                width: 100%;
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .profile_title {
+                        width: 100%;
+                        margin: 0 0 20px 0;
+                        font-family: $letter;
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: $letter-color;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin: 5px 5%;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                    }
+                }
+            }
+
+            .perfil_image {
+                display: none;
+            }
+        }
+
+        .home_experience {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .experience_title {
+                width: 100%;
+                margin: 0 0 20px 0;
+                font-family: $letter;
+                font-size: 20px;
+                font-weight: 900;
+                color: $letter-color;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .experience_data {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .data_card {
+                    width: calc((100% - 180px) / 2);
+                    height: 160px;
+                    margin: 10px;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 10px 5px $shadow;
+
+                    .data_title {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $letter-secundary-color;
+                    }
+
+                    .data_time {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-select-color;
+                    }
+
+                    .data_text {
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        font-family: $letter;
+                        font-size: 15px;
+                        color: $letter-color;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home_light {
+        $primary-color: #ffffffff;
+        $shadow: #bcbcbc;
+        $letter-color: #717171;
+        $letter-secundary-color: #000000;
+        $letter-select-color: #2769e3;
+        $button-color: #2769e3;
+        $button-select-color: #5c88da;
+        $letter: 'Consolas';
+
+        width: 100%;
+        height: calc(100% - 65px);
+        padding: 65px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $primary-color;
+        z-index: 0;
+        transition: 500ms;
+
+        .home_presentation {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column-reverse;
+
+            .presentation_text {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .presentation {
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                        text-align: center;
+                    }
+
+                    .name {
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 26px;
+                        color: $letter-color;
+                        text-align: center;
+                    }
+
+                    .profession {
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 22px;
+                        color: $letter-color;
+                        text-align: center;
+                    }
+
+                    button {
+                        width: 130px;
+                        height: 35px;
+                        margin: 20px 0;
+                        font-family: $letter;
+                        font-size: 15px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: none;
+                        outline: none;
+                        color: $primary-color;
+                        background-color: $button-color;
+                        transition: 350ms;
+                    }
+
+                    button:hover,
+                    button:focus {
+                        background-color: $button-select-color;
+                        transition: 350ms;
+                    }
+                }
+            }
+
+            .presentation_image {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 20px 0;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+
+        .home_profile {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+
+            .profile_text {
+                width: 100%;
+                height: 100%;
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .profile_title {
+                        width: 100%;
+                        margin: 0 0 20px 0;
+                        font-family: $letter;
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: $letter-color;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin: 5px 5%;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                    }
+                }
+            }
+
+            .perfil_image {
+                display: none;
+            }
+        }
+
+        .home_experience {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .experience_title {
+                width: 100%;
+                margin: 0 0 20px 0;
+                font-family: $letter;
+                font-size: 20px;
+                font-weight: 900;
+                color: $letter-color;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .experience_data {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .data_card {
+                    width: calc(100% - 30px);
+                    height: 160px;
+                    margin: 15px;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 10px 5px $shadow;
+
+                    .data_title {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $letter-secundary-color;
+                    }
+
+                    .data_time {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-select-color;
+                    }
+
+                    .data_text {
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        font-family: $letter;
+                        font-size: 15px;
+                        color: $letter-color;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .home_dark {
+        $primary-color: #272b2f;
+        $shadow: #212529;
+        $letter-color: #bbbbbb;
+        $letter-secundary-color: #bbbbbb;
+        $letter-select-color: #2769e3;
+        $letter-button: #ffffff;
+        $button-color: #2769e3;
+        $button-select-color: #5c88da;
+        $letter: 'Consolas';
+
+        width: 100%;
+        height: calc(100% - 65px);
+        padding: 65px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $primary-color;
+        z-index: 0;
+        transition: 500ms;
+
+        .home_presentation {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column-reverse;
+
+            .presentation_text {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .presentation {
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                        text-align: center;
+                    }
+
+                    .name {
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 26px;
+                        color: $letter-color;
+                        text-align: center;
+                    }
+
+                    .profession {
+                        margin: 2px 0;
+                        font-family: $letter;
+                        font-size: 22px;
+                        color: $letter-color;
+                        text-align: center;
+                    }
+
+                    button {
+                        width: 130px;
+                        height: 35px;
+                        margin: 20px 0;
+                        font-family: $letter;
+                        font-size: 15px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: none;
+                        outline: none;
+                        color: $letter-button;
+                        background-color: $button-color;
+                        transition: 350ms;
+                    }
+
+                    button:hover,
+                    button:focus {
+                        background-color: $button-select-color;
+                        transition: 350ms;
+                    }
+                }
+            }
+
+            .presentation_image {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 20px 0;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+
+        .home_profile {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+
+            .profile_text {
+                width: 100%;
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .profile_title {
+                        width: 100%;
+                        margin: 0 0 20px 0;
+                        font-family: $letter;
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: $letter-color;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin: 5px 5%;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-color;
+                    }
+                }
+            }
+
+            .perfil_image {
+                display: none;
+            }
+        }
+
+        .home_experience {
+            width: 100%;
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .experience_title {
+                width: 100%;
+                margin: 0 0 20px 0;
+                font-family: $letter;
+                font-size: 20px;
+                font-weight: 900;
+                color: $letter-color;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .experience_data {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .data_card {
+                    width: calc(100% - 30px);
+                    height: 160px;
+                    margin: 15px;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 10px 5px $shadow;
+
+                    .data_title {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $letter-secundary-color;
+                    }
+
+                    .data_time {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $letter;
+                        font-size: 16px;
+                        color: $letter-select-color;
+                    }
+
+                    .data_text {
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        font-family: $letter;
+                        font-size: 15px;
+                        color: $letter-color;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+    }
+}
