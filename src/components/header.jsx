@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { dispatchTheme, dispatchLanguage } from '../controllers';
+import { dispatchTheme, dispatchLanguage } from '../controllers/header';
 import { NavLink } from 'react-router-dom';
 import { FaSun } from 'react-icons/fa';
 import { BiWorld } from 'react-icons/bi';
 import { FiMenu } from 'react-icons/fi';
 import logo from '../assets/images/logo.png';
-import spanish from '../info/spanish.json';
-import english from '../info/english.json';
+import { spanish } from '../info/spanish';
+import { english } from '../info/english';
 
 export const Header = () => {
     const theme = useSelector((state) => state.getIn(['Theme', 'value']));

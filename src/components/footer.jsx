@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import spanish from '../info/spanish.json';
-import english from '../info/english.json';
+import { spanish } from '../info/spanish';
+import { english } from '../info/english';
 import {
     FaFacebook,
     FaTwitter,

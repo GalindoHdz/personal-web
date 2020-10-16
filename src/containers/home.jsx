@@ -2,41 +2,24 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import me from '../assets/images/me.png';
 import profile from '../assets/images/profile.png';
-import spanish from '../info/spanish.json';
-import english from '../info/english.json';
+import { spanish } from '../info/spanish';
+import { english } from '../info/english';
 
 export const Home = () => {
     const theme = useSelector((state) => state.getIn(['Theme', 'value']));
     const language = useSelector((state) => state.getIn(['Language', 'value']));
     const typeClass = `home_${theme}`;
-    const textProfile = language
-        ? english.home.profile.text
-        : spanish.home.profile.text;
-    const cards = language
-        ? english.home.experience.card
-        : spanish.home.experience.card;
+    const home = language ? english.home : spanish.home;
 
     return (
         <div className={typeClass}>
             <section className='home_presentation'>
                 <div className='presentation_text'>
                     <div>
-                        <p className='presentation'>
-                            {language
-                                ? english.home.presentation
-                                : spanish.home.presentation}
-                        </p>
-                        <p className='name'>
-                            {language ? english.home.name : spanish.home.name}
-                        </p>
-                        <p className='profession'>
-                            {language
-                                ? english.home.profesion
-                                : spanish.home.profesion}
-                        </p>
-                        <button>
-                            {language ? english.home.cv : spanish.home.cv}
-                        </button>
+                        <p className='presentation'>{home.presentation}</p>
+                        <p className='name'>{home.name}</p>
+                        <p className='profession'>{home.profesion}</p>
+                        <button>{home.cv}</button>
                     </div>
                 </div>
                 <div className='presentation_image'>
@@ -46,12 +29,8 @@ export const Home = () => {
             <section className='home_profile'>
                 <div className='profile_text'>
                     <div>
-                        <p className='profile_title'>
-                            {language
-                                ? english.home.profile.title
-                                : spanish.home.profile.title}
-                        </p>
-                        {textProfile.map((text) => (
+                        <p className='profile_title'>{home.profile.title}</p>
+                        {home.profile.text.map((text) => (
                             <p key={text.key}>{text.text}</p>
                         ))}
                     </div>
@@ -61,13 +40,9 @@ export const Home = () => {
                 </div>
             </section>
             <section className='home_experience'>
-                <div className='experience_title'>
-                    {language
-                        ? english.home.experience.title
-                        : spanish.home.experience.title}
-                </div>
+                <div className='experience_title'>{home.experience.title}</div>
                 <div className='experience_data'>
-                    {cards.map((card) => (
+                    {home.experience.card.map((card) => (
                         <div className='data_card' key={card.key}>
                             <p className='data_title'>{card.title}</p>
                             <p className='data_time'>{card.time}</p>
