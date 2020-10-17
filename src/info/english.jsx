@@ -95,25 +95,28 @@ export const english = {
             },
             {
                 key: 4,
-                name: 'API-LIBRARY',
+                name: 'API-SAC',
                 image: image,
                 URL: 'https://www.google.com.mx',
                 git: 'https://github.com/',
             },
             {
                 key: 5,
-                name: 'WEB-APP-LIBRARY',
+                name: 'WEB-APP-SAC',
                 image: image,
                 URL: 'https://www.google.com.mx',
                 git: 'https://github.com/',
             },
             {
                 key: 6,
-                name: 'APP-LIBRARY',
+                name: 'PERSONAL-WEB',
                 image: image,
                 URL: 'https://www.google.com.mx',
                 git: 'https://github.com/',
             },
         ],
+    },
+    blog: {
+        read: 'read',
     },
 };
