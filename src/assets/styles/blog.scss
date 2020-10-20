@@ -13,25 +13,20 @@
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .blog_title {
             width: 100%;
-            margin: 30px 0 10px 0;
+            margin: 30px 0;
             font-family: $letter;
             font-size: 22px;
             font-weight: 900;
             color: $letter-color;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
         }
 
         .blog_cards {
-            width: 100%;
-            height: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -43,9 +38,9 @@
                 padding: 10px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 border-radius: 4px;
                 box-shadow: 0px 2px 10px 5px $shadow;
+                transition: 500ms;
 
                 .blog_image {
                     width: 100%;
@@ -76,6 +71,7 @@
                         color: $letter-color;
                         justify-content: center;
                         align-items: center;
+                        overflow-y: auto;
                     }
 
                     a {
@@ -91,8 +87,7 @@
                         color: $primary-color;
                         background-color: $button-color;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
+                        transition: 350ms;
                     }
 
                     a:hover,
@@ -110,7 +105,6 @@
         $shadow: #212529;
         $letter-color: #bbbbbb;
         $button-color: #2769e3;
-        $button-letter-color: #ffffffff;
         $button-select-color: #5c88da;
         $letter: 'Consolas';
 
@@ -120,25 +114,20 @@
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .blog_title {
             width: 100%;
-            margin: 30px 0 10px 0;
+            margin: 30px 0;
             font-family: $letter;
             font-size: 22px;
             font-weight: 900;
             color: $letter-color;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
         }
 
         .blog_cards {
-            width: 100%;
-            height: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -150,9 +139,9 @@
                 padding: 10px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 border-radius: 4px;
                 box-shadow: 0px 2px 10px 5px $shadow;
+                transition: 500ms;
 
                 .blog_image {
                     width: 100%;
@@ -183,6 +172,7 @@
                         color: $letter-color;
                         justify-content: center;
                         align-items: center;
+                        overflow-y: auto;
                     }
 
                     a {
@@ -195,11 +185,10 @@
                         font-family: $letter;
                         font-size: 15px;
                         font-weight: 700;
-                        color: $button-letter-color;
+                        color: $primary-color;
                         background-color: $button-color;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
+                        transition: 350ms;
                     }
 
                     a:hover,
@@ -228,25 +217,20 @@
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .blog_title {
             width: 100%;
-            margin: 30px 0 10px 0;
+            margin: 30px 0;
             font-family: $letter;
             font-size: 20px;
             font-weight: 900;
             color: $letter-color;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
         }
 
         .blog_cards {
-            width: 100%;
-            height: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -258,9 +242,9 @@
                 padding: 10px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 border-radius: 4px;
                 box-shadow: 0px 2px 10px 5px $shadow;
+                transition: 500ms;
 
                 .blog_image {
                     width: 100%;
@@ -291,6 +275,7 @@
                         color: $letter-color;
                         justify-content: center;
                         align-items: center;
+                        overflow-y: auto;
                     }
 
                     a {
@@ -306,8 +291,7 @@
                         color: $primary-color;
                         background-color: $button-color;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
+                        transition: 350ms;
                     }
 
                     a:hover,
@@ -325,7 +309,6 @@
         $shadow: #212529;
         $letter-color: #bbbbbb;
         $button-color: #2769e3;
-        $button-letter-color: #ffffffff;
         $button-select-color: #5c88da;
         $letter: 'Consolas';
 
@@ -335,25 +318,20 @@
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .blog_title {
             width: 100%;
-            margin: 30px 0 10px 0;
+            margin: 30px 0;
             font-family: $letter;
             font-size: 20px;
             font-weight: 900;
             color: $letter-color;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
         }
 
         .blog_cards {
-            width: 100%;
-            height: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -365,9 +343,9 @@
                 padding: 10px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 border-radius: 4px;
                 box-shadow: 0px 2px 10px 5px $shadow;
+                transition: 500ms;
 
                 .blog_image {
                     width: 100%;
@@ -398,6 +376,7 @@
                         color: $letter-color;
                         justify-content: center;
                         align-items: center;
+                        overflow-y: auto;
                     }
 
                     a {
@@ -410,11 +389,10 @@
                         font-family: $letter;
                         font-size: 15px;
                         font-weight: 700;
-                        color: $button-letter-color;
+                        color: $primary-color;
                         background-color: $button-color;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
+                        transition: 350ms;
                     }
 
                     a:hover,
@@ -443,25 +421,20 @@
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .blog_title {
             width: 100%;
-            margin: 30px 0 10px 0;
+            margin: 30px 0;
             font-family: $letter;
             font-size: 20px;
             font-weight: 900;
             color: $letter-color;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
         }
 
         .blog_cards {
-            width: 100%;
-            height: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -473,9 +446,9 @@
                 padding: 10px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 border-radius: 4px;
                 box-shadow: 0px 2px 10px 5px $shadow;
+                transition: 500ms;
 
                 .blog_image {
                     width: 100%;
@@ -506,6 +479,7 @@
                         color: $letter-color;
                         justify-content: center;
                         align-items: center;
+                        overflow-y: auto;
                     }
 
                     a {
@@ -521,8 +495,7 @@
                         color: $primary-color;
                         background-color: $button-color;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
+                        transition: 350ms;
                     }
 
                     a:hover,
@@ -540,7 +513,6 @@
         $shadow: #212529;
         $letter-color: #bbbbbb;
         $button-color: #2769e3;
-        $button-letter-color: #ffffffff;
         $button-select-color: #5c88da;
         $letter: 'Consolas';
 
@@ -550,25 +522,20 @@
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .blog_title {
             width: 100%;
-            margin: 30px 0 10px 0;
+            margin: 30px 0;
             font-family: $letter;
             font-size: 20px;
             font-weight: 900;
             color: $letter-color;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
         }
 
         .blog_cards {
-            width: 100%;
-            height: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -580,9 +547,9 @@
                 padding: 10px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 border-radius: 4px;
                 box-shadow: 0px 2px 10px 5px $shadow;
+                transition: 500ms;
 
                 .blog_image {
                     width: 100%;
@@ -613,6 +580,7 @@
                         color: $letter-color;
                         justify-content: center;
                         align-items: center;
+                        overflow-y: auto;
                     }
 
                     a {
@@ -625,11 +593,10 @@
                         font-family: $letter;
                         font-size: 15px;
                         font-weight: 700;
-                        color: $button-letter-color;
+                        color: $primary-color;
                         background-color: $button-color;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
+                        transition: 350ms;
                     }
 
                     a:hover,

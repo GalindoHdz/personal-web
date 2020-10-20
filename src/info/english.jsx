@@ -117,6 +117,20 @@ export const english = {
         ],
     },
     blog: {
-        read: 'read',
+        read: 'Read',
+    },
+    contact: {
+        title: 'Contact me',
+        name: 'name',
+        email: 'email',
+        message: 'message',
+        button: 'Send',
+    },
+    message: {
+        name: 'Enter a name',
+        email: 'Enter a valid email',
+        message: 'Enter a message',
+        send: 'Message sent',
+        error: 'I am sorry, you cant message your message',
     },
 };

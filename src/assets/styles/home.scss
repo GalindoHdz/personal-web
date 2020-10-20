@@ -11,35 +11,29 @@
 
         width: 100%;
         height: calc(100% - 65px);
-        padding: 65px 0 0 0;
+        padding: 65px 0 50px 0;
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .home_presentation {
             width: 100%;
-            height: 300px;
-            margin: 0 0 50px 0;
+            margin: 30px 0;
             display: flex;
-            flex-direction: row;
 
             .presentation_text {
                 width: 50%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
 
                 div {
-                    margin: 0 0 0 15%;
+                    margin: 0 15%;
                     display: flex;
                     flex-wrap: wrap;
 
                     .presentation {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 16px;
@@ -47,7 +41,6 @@
                     }
 
                     .name {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 26px;
@@ -69,7 +62,6 @@
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
@@ -90,32 +82,25 @@
 
             .presentation_image {
                 width: 50%;
-                height: 100%;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
                 img {
                     width: 300px;
-                    height: auto;
-                    margin: 0 0 0 -100px;
                 }
             }
         }
 
         .home_profile {
             width: 100%;
-            margin: 0 0 50px 0;
+            margin-bottom: 50px;
             display: flex;
             flex-direction: row-reverse;
 
             .profile_text {
                 width: 60%;
-                height: 100%;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
                 justify-content: center;
 
                 div {
@@ -124,20 +109,18 @@
 
                     .profile_title {
                         width: 100%;
-                        margin: 0 0 20px 0;
+                        margin: 20px 0;
                         font-family: $letter;
                         font-size: 22px;
                         font-weight: 900;
                         color: $letter-color;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                     }
 
                     p {
-                        width: 100%;
-                        margin: 5px 5%;
+                        width: 95%;
                         font-family: $letter;
                         font-size: 18px;
                         color: $letter-color;
@@ -147,35 +130,30 @@
 
             .perfil_image {
                 width: 40%;
-                height: 100%;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
                 img {
                     width: 300px;
-                    height: auto;
                 }
             }
         }
 
         .home_experience {
             width: 100%;
-            margin: 0 0 50px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             .experience_title {
                 width: 100%;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
                 font-family: $letter;
                 font-size: 22px;
                 font-weight: 900;
                 color: $letter-color;
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
             }
@@ -183,7 +161,6 @@
             .experience_data {
                 width: 100%;
                 display: flex;
-                flex-wrap: wrap;
 
                 .data_card {
                     width: calc((100% - 180px) / 3);
@@ -194,11 +171,11 @@
                     flex-wrap: wrap;
                     border-radius: 4px;
                     box-shadow: 0px 2px 10px 5px $shadow;
+                    transition: 500ms;
 
                     .data_title {
                         width: 100%;
                         height: 20px;
-                        display: flex;
                         align-items: center;
                         font-family: $letter;
                         font-size: 18px;
@@ -207,7 +184,6 @@
                     }
 
                     .data_time {
-                        width: 100%;
                         height: 20px;
                         display: flex;
                         align-items: center;
@@ -217,7 +193,6 @@
                     }
 
                     .data_text {
-                        width: 100%;
                         height: 100px;
                         display: flex;
                         font-family: $letter;
@@ -234,44 +209,36 @@
         $primary-color: #272b2f;
         $shadow: #212529;
         $letter-color: #bbbbbb;
-        $letter-secundary-color: #bbbbbb;
-        $letter-select-color: #2769e3;
-        $letter-button: #ffffff;
+        $letter-secundary-color: #2769e3;
         $button-color: #2769e3;
         $button-select-color: #5c88da;
         $letter: 'Consolas';
 
         width: 100%;
         height: calc(100% - 65px);
-        padding: 65px 0 0 0;
+        padding: 65px 0 50px 0;
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .home_presentation {
             width: 100%;
-            height: 300px;
-            margin: 0 0 50px 0;
+            margin: 30px 0;
             display: flex;
-            flex-direction: row;
 
             .presentation_text {
                 width: 50%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
 
                 div {
-                    margin: 0 0 0 15%;
+                    margin: 0 15%;
                     display: flex;
                     flex-wrap: wrap;
 
                     .presentation {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 16px;
@@ -279,7 +246,6 @@
                     }
 
                     .name {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 26px;
@@ -301,13 +267,12 @@
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
                         border: none;
                         outline: none;
-                        color: $letter-button;
+                        color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
@@ -322,32 +287,25 @@
 
             .presentation_image {
                 width: 50%;
-                height: 100%;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
                 img {
                     width: 300px;
-                    height: auto;
-                    margin: 0 0 0 -100px;
                 }
             }
         }
 
         .home_profile {
             width: 100%;
-            margin: 0 0 50px 0px;
+            margin-bottom: 50px;
             display: flex;
             flex-direction: row-reverse;
 
             .profile_text {
                 width: 60%;
-                height: 100%;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
                 justify-content: center;
 
                 div {
@@ -356,20 +314,18 @@
 
                     .profile_title {
                         width: 100%;
-                        margin: 0 0 20px 0;
+                        margin: 20px 0;
                         font-family: $letter;
                         font-size: 22px;
                         font-weight: 900;
                         color: $letter-color;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                     }
 
                     p {
-                        width: 100%;
-                        margin: 5px 5%;
+                        width: 95%;
                         font-family: $letter;
                         font-size: 18px;
                         color: $letter-color;
@@ -379,35 +335,30 @@
 
             .perfil_image {
                 width: 40%;
-                height: 100%;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
                 img {
                     width: 300px;
-                    height: auto;
                 }
             }
         }
 
         .home_experience {
             width: 100%;
-            margin: 0 0 50px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             .experience_title {
                 width: 100%;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
                 font-family: $letter;
                 font-size: 22px;
                 font-weight: 900;
                 color: $letter-color;
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
             }
@@ -415,7 +366,6 @@
             .experience_data {
                 width: 100%;
                 display: flex;
-                flex-wrap: wrap;
 
                 .data_card {
                     width: calc((100% - 180px) / 3);
@@ -426,6 +376,7 @@
                     flex-wrap: wrap;
                     border-radius: 4px;
                     box-shadow: 0px 2px 10px 5px $shadow;
+                    transition: 500ms;
 
                     .data_title {
                         width: 100%;
@@ -435,21 +386,19 @@
                         font-family: $letter;
                         font-size: 18px;
                         font-weight: 700;
-                        color: $letter-secundary-color;
+                        color: $letter-color;
                     }
 
                     .data_time {
-                        width: 100%;
                         height: 20px;
                         display: flex;
                         align-items: center;
                         font-family: $letter;
                         font-size: 16px;
-                        color: $letter-select-color;
+                        color: $letter-secundary-color;
                     }
 
                     .data_text {
-                        width: 100%;
                         height: 100px;
                         display: flex;
                         font-family: $letter;
@@ -476,34 +425,29 @@
 
         width: 100%;
         height: calc(100% - 65px);
-        padding: 65px 0 0 0;
+        padding: 65px 0 50px 0;
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .home_presentation {
             width: 100%;
-            height: 300px;
+            margin: 30px 0;
             display: flex;
-            flex-direction: row;
 
             .presentation_text {
                 width: 50%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
 
                 div {
-                    margin: 0 0 0 15%;
+                    margin: 0 15%;
                     display: flex;
                     flex-wrap: wrap;
 
                     .presentation {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 16px;
@@ -511,7 +455,6 @@
                     }
 
                     .name {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 26px;
@@ -519,7 +462,6 @@
                     }
 
                     .profession {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 22px;
@@ -533,7 +475,6 @@
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
@@ -554,30 +495,23 @@
 
             .presentation_image {
                 width: 50%;
-                height: 100%;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
                 img {
                     width: 200px;
-                    height: auto;
                 }
             }
         }
 
         .home_profile {
             width: 100%;
-            margin: 0 0 50px 0;
+            margin-bottom: 50px;
             display: flex;
 
             .profile_text {
-                width: 100%;
-                height: 100%;
-                margin: 0 10px;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
 
                 div {
@@ -586,19 +520,17 @@
 
                     .profile_title {
                         width: 100%;
-                        margin: 0 0 20px 0;
+                        margin: 20px 0;
                         font-family: $letter;
                         font-size: 20px;
                         font-weight: 900;
                         color: $letter-color;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                     }
 
                     p {
-                        width: 100%;
                         margin: 5px 5%;
                         font-family: $letter;
                         font-size: 16px;
@@ -614,20 +546,18 @@
 
         .home_experience {
             width: 100%;
-            margin: 0 0 50px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             .experience_title {
                 width: 100%;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
                 font-family: $letter;
                 font-size: 20px;
                 font-weight: 900;
                 color: $letter-color;
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
             }
@@ -647,11 +577,11 @@
                     flex-wrap: wrap;
                     border-radius: 4px;
                     box-shadow: 0px 2px 10px 5px $shadow;
+                    transition: 500ms;
 
                     .data_title {
                         width: 100%;
                         height: 20px;
-                        display: flex;
                         align-items: center;
                         font-family: $letter;
                         font-size: 18px;
@@ -660,7 +590,6 @@
                     }
 
                     .data_time {
-                        width: 100%;
                         height: 20px;
                         display: flex;
                         align-items: center;
@@ -670,7 +599,6 @@
                     }
 
                     .data_text {
-                        width: 100%;
                         height: 100px;
                         display: flex;
                         font-family: $letter;
@@ -689,41 +617,35 @@
         $letter-color: #bbbbbb;
         $letter-secundary-color: #bbbbbb;
         $letter-select-color: #2769e3;
-        $letter-button: #ffffff;
         $button-color: #2769e3;
         $button-select-color: #5c88da;
         $letter: 'Consolas';
 
         width: 100%;
         height: calc(100% - 65px);
-        padding: 65px 0 0 0;
+        padding: 65px 0 50px 0;
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .home_presentation {
             width: 100%;
-            height: 300px;
+            margin: 30px 0;
             display: flex;
-            flex-direction: row;
 
             .presentation_text {
                 width: 50%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
 
                 div {
-                    margin: 0 0 0 15%;
+                    margin: 0 15%;
                     display: flex;
                     flex-wrap: wrap;
 
                     .presentation {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 16px;
@@ -731,7 +653,6 @@
                     }
 
                     .name {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 26px;
@@ -739,7 +660,6 @@
                     }
 
                     .profession {
-                        width: 100%;
                         margin: 2px 0;
                         font-family: $letter;
                         font-size: 22px;
@@ -753,13 +673,12 @@
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
                         border: none;
                         outline: none;
-                        color: $letter-button;
+                        color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
@@ -774,29 +693,23 @@
 
             .presentation_image {
                 width: 50%;
-                height: 100%;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
                 img {
                     width: 200px;
-                    height: auto;
                 }
             }
         }
 
         .home_profile {
             width: 100%;
-            margin: 0 0 50px 0;
+            margin-bottom: 50px;
             display: flex;
 
             .profile_text {
-                width: 100%;
-                margin: 0 10px;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
 
                 div {
@@ -805,19 +718,17 @@
 
                     .profile_title {
                         width: 100%;
-                        margin: 0 0 20px 0;
+                        margin: 20px 0;
                         font-family: $letter;
                         font-size: 20px;
                         font-weight: 900;
                         color: $letter-color;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                     }
 
                     p {
-                        width: 100%;
                         margin: 5px 5%;
                         font-family: $letter;
                         font-size: 16px;
@@ -833,20 +744,18 @@
 
         .home_experience {
             width: 100%;
-            margin: 0 0 50px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             .experience_title {
                 width: 100%;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
                 font-family: $letter;
                 font-size: 20px;
                 font-weight: 900;
                 color: $letter-color;
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
             }
@@ -866,11 +775,11 @@
                     flex-wrap: wrap;
                     border-radius: 4px;
                     box-shadow: 0px 2px 10px 5px $shadow;
+                    transition: 500ms;
 
                     .data_title {
                         width: 100%;
                         height: 20px;
-                        display: flex;
                         align-items: center;
                         font-family: $letter;
                         font-size: 18px;
@@ -879,7 +788,6 @@
                     }
 
                     .data_time {
-                        width: 100%;
                         height: 20px;
                         display: flex;
                         align-items: center;
@@ -889,7 +797,6 @@
                     }
 
                     .data_text {
-                        width: 100%;
                         height: 100px;
                         display: flex;
                         font-family: $letter;
@@ -916,22 +823,19 @@
 
         width: 100%;
         height: calc(100% - 65px);
-        padding: 65px 0 0 0;
+        padding: 65px 0 50px 0;
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .home_presentation {
             width: 100%;
-            margin: 20px 0;
+            margin: 30px 0;
             display: flex;
             flex-direction: column-reverse;
 
             .presentation_text {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 justify-content: center;
 
@@ -971,7 +875,6 @@
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
@@ -991,31 +894,24 @@
             }
 
             .presentation_image {
-                width: 100%;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
 
                 img {
                     width: 200px;
-                    height: auto;
                 }
             }
         }
 
         .home_profile {
             width: 100%;
-            margin: 0 0 50px 0;
+            margin-bottom: 50px;
             display: flex;
 
             .profile_text {
-                width: 100%;
-                height: 100%;
-                margin: 0 10px;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
 
                 div {
@@ -1024,19 +920,17 @@
 
                     .profile_title {
                         width: 100%;
-                        margin: 0 0 20px 0;
+                        margin-bottom: 20px;
                         font-family: $letter;
                         font-size: 20px;
                         font-weight: 900;
                         color: $letter-color;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                     }
 
                     p {
-                        width: 100%;
                         margin: 5px 5%;
                         font-family: $letter;
                         font-size: 16px;
@@ -1052,20 +946,18 @@
 
         .home_experience {
             width: 100%;
-            margin: 0 0 50px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             .experience_title {
                 width: 100%;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
                 font-family: $letter;
                 font-size: 20px;
                 font-weight: 900;
                 color: $letter-color;
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
             }
@@ -1085,11 +977,11 @@
                     flex-wrap: wrap;
                     border-radius: 4px;
                     box-shadow: 0px 2px 10px 5px $shadow;
+                    transition: 500ms;
 
                     .data_title {
                         width: 100%;
                         height: 20px;
-                        display: flex;
                         align-items: center;
                         font-family: $letter;
                         font-size: 18px;
@@ -1098,9 +990,7 @@
                     }
 
                     .data_time {
-                        width: 100%;
                         height: 20px;
-                        display: flex;
                         align-items: center;
                         font-family: $letter;
                         font-size: 16px;
@@ -1108,9 +998,7 @@
                     }
 
                     .data_text {
-                        width: 100%;
                         height: 100px;
-                        display: flex;
                         font-family: $letter;
                         font-size: 15px;
                         color: $letter-color;
@@ -1125,7 +1013,6 @@
         $primary-color: #272b2f;
         $shadow: #212529;
         $letter-color: #bbbbbb;
-        $letter-secundary-color: #bbbbbb;
         $letter-select-color: #2769e3;
         $letter-button: #ffffff;
         $button-color: #2769e3;
@@ -1134,22 +1021,19 @@
 
         width: 100%;
         height: calc(100% - 65px);
-        padding: 65px 0 0 0;
+        padding: 65px 0 50px 0;
         display: flex;
         flex-wrap: wrap;
         background-color: $primary-color;
-        z-index: 0;
         transition: 500ms;
 
         .home_presentation {
             width: 100%;
-            margin: 20px 0;
+            margin: 30px 0;
             display: flex;
             flex-direction: column-reverse;
 
             .presentation_text {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 justify-content: center;
 
@@ -1189,13 +1073,12 @@
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
                         border: none;
                         outline: none;
-                        color: $letter-button;
+                        color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
@@ -1209,30 +1092,24 @@
             }
 
             .presentation_image {
-                width: 100%;
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
 
                 img {
                     width: 200px;
-                    height: auto;
                 }
             }
         }
 
         .home_profile {
             width: 100%;
-            margin: 0 0 50px 0;
+            margin-bottom: 50px;
             display: flex;
 
             .profile_text {
-                width: 100%;
-                margin: 0 10px;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
 
                 div {
@@ -1241,19 +1118,17 @@
 
                     .profile_title {
                         width: 100%;
-                        margin: 0 0 20px 0;
+                        margin-bottom: 20px;
                         font-family: $letter;
                         font-size: 20px;
                         font-weight: 900;
                         color: $letter-color;
                         display: flex;
-                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: center;
                     }
 
                     p {
-                        width: 100%;
                         margin: 5px 5%;
                         font-family: $letter;
                         font-size: 16px;
@@ -1269,20 +1144,18 @@
 
         .home_experience {
             width: 100%;
-            margin: 0 0 50px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             .experience_title {
                 width: 100%;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
                 font-family: $letter;
                 font-size: 20px;
                 font-weight: 900;
                 color: $letter-color;
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
             }
@@ -1302,22 +1175,20 @@
                     flex-wrap: wrap;
                     border-radius: 4px;
                     box-shadow: 0px 2px 10px 5px $shadow;
+                    transition: 500ms;
 
                     .data_title {
                         width: 100%;
                         height: 20px;
-                        display: flex;
                         align-items: center;
                         font-family: $letter;
                         font-size: 18px;
                         font-weight: 700;
-                        color: $letter-secundary-color;
+                        color: $letter-color;
                     }
 
                     .data_time {
-                        width: 100%;
                         height: 20px;
-                        display: flex;
                         align-items: center;
                         font-family: $letter;
                         font-size: 16px;
@@ -1325,9 +1196,7 @@
                     }
 
                     .data_text {
-                        width: 100%;
                         height: 100px;
-                        display: flex;
                         font-family: $letter;
                         font-size: 15px;
                         color: $letter-color;

@@ -53,7 +53,7 @@ export const Skills = () => {
     };
 
     const dataBase = {
-        labels: ['Oracle', 'PorstgreSQL', 'MySQL', 'MongoDB'],
+        labels: ['Oracle', 'PostgreSQL', 'MySQL', 'MongoDB'],
         datasets: [
             {
                 label: 'Nivel',

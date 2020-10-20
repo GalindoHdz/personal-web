@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { spanish } from '../info/spanish';
 import { english } from '../info/english';
+import { env } from '../env';
 
 export const Blog = () => {
     const theme = useSelector((state) => state.getIn(['Theme', 'value']));
@@ -12,10 +13,7 @@ export const Blog = () => {
 
     useMemo(() => {
         const getPost = async () => {
-            const posts = await fetch(
-                'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@galindohdz'
-            );
-
+            const posts = await fetch(env.MEDIUM);
             const data = await posts.json();
             const array = [];
 

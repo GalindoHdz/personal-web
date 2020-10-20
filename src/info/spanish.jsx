@@ -117,6 +117,20 @@ export const spanish = {
         ],
     },
     blog: {
-        read: 'leer',
+        read: 'Leer',
+    },
+    contact: {
+        title: 'Contáctame',
+        name: 'nombre',
+        email: 'correo',
+        message: 'mensaje',
+        button: 'Enviar',
+    },
+    message: {
+        name: 'Ingrese un nombre',
+        email: 'Ingrese un email valido',
+        message: 'Ingrese un mensaje',
+        send: 'Mensaje enviado',
+        error: 'Lo siento, no se puede mendar tu mensaje',
     },
 };
