@@ -2,6 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import me from '../assets/images/me.png';
 import profile from '../assets/images/profile.png';
+import cvs from '../assets/images/LuisGalindoCVS.pdf';
+import cve from '../assets/images/LuisGalindoCVE.pdf';
 import { spanish } from '../info/spanish';
 import { english } from '../info/english';
 
@@ -19,7 +21,15 @@ export const Home = () => {
                         <p className='presentation'>{home.presentation}</p>
                         <p className='name'>{home.name}</p>
                         <p className='profession'>{home.profesion}</p>
-                        <button>{home.cv}</button>
+                        {language ? (
+                            <a href={cve} download='LuisGalindoCVE'>
+                                {home.cv}
+                            </a>
+                        ) : (
+                            <a href={cvs} download='LuisGalindoCVS'>
+                                {home.cv}
+                            </a>
+                        )}
                     </div>
                 </div>
                 <div className='presentation_image'>

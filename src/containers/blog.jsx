@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { spanish } from '../info/spanish';
 import { english } from '../info/english';
@@ -11,7 +11,7 @@ export const Blog = () => {
     const [post, setPost] = useState([]);
     const blog = language ? english.blog : spanish.blog;
 
-    useMemo(() => {
+    useEffect(() => {
         const getPost = async () => {
             const posts = await fetch(env.MEDIUM);
             const data = await posts.json();

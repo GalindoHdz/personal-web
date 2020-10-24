@@ -9,6 +9,11 @@ export const english = {
         contact: 'Contact',
     },
     footer: {
+        medium: 'https://medium.com/@galindohdz',
+        twitter: 'https://twitter.com/GalindoHdzEngin',
+        github: 'https://github.com/GalindoHdz',
+        linkedin: 'https://www.linkedin.com/in/GalindoHdz/',
+        instagram: 'https://www.instagram.com/Galindo_Hdz_Engin/',
         copy: 'Created by Luis Antonio Galindo Hernández © ',
     },
     home: {

@@ -29,13 +29,16 @@ export const Contact = () => {
         });
     };
 
-    const login = (event) => {
+    const login = async (event) => {
         if (event.type === 'click' || event.key === 'Enter') {
             event.preventDefault();
 
-            const valid = validDataEmail(state, message);
+            const form = document.forms['contact'];
+            const valid = await validDataEmail(state, message, form);
 
-            return dispatchMessage(dispacth, { value: valid });
+            dispatchMessage(dispacth, { value: valid });
+
+            return form.reset();
         }
     };
 
@@ -48,6 +51,7 @@ export const Contact = () => {
                     <input
                         type='text'
                         id='name'
+                        name='name'
                         placeholder={contact.name}
                         onChange={data}
                         onKeyPress={login}
@@ -55,6 +59,7 @@ export const Contact = () => {
                     <input
                         type='text'
                         id='email'
+                        name='email'
                         placeholder={contact.email}
                         onChange={data}
                         onKeyPress={login}
@@ -63,6 +68,7 @@ export const Contact = () => {
                         cols='30'
                         rows='10'
                         id='message'
+                        name='message'
                         placeholder={contact.message}
                         onChange={data}
                     />

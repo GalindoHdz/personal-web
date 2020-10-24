@@ -55,25 +55,24 @@
                         color: $letter-color;
                     }
 
-                    button {
+                    a {
                         width: 130px;
                         height: 35px;
                         margin: 20px 0;
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
+                        text-decoration: none;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
                         color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
 
-                    button:hover,
-                    button:focus {
+                    a:hover,
+                    a:focus {
                         background-color: $button-select-color;
                         transition: 350ms;
                     }
@@ -88,6 +87,9 @@
 
                 img {
                     width: 300px;
+                    border-radius: 50%;
+                    background-color: $shadow;
+                    transition: 500ms;
                 }
             }
         }
@@ -260,25 +262,24 @@
                         color: $letter-color;
                     }
 
-                    button {
+                    a {
                         width: 130px;
                         height: 35px;
                         margin: 20px 0;
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
+                        text-decoration: none;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
                         color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
 
-                    button:hover,
-                    button:focus {
+                    a:hover,
+                    a:focus {
                         background-color: $button-select-color;
                         transition: 350ms;
                     }
@@ -293,6 +294,9 @@
 
                 img {
                     width: 300px;
+                    border-radius: 50%;
+                    background-color: $shadow;
+                    transition: 500ms;
                 }
             }
         }
@@ -468,25 +472,24 @@
                         color: $letter-color;
                     }
 
-                    button {
+                    a {
                         width: 130px;
                         height: 35px;
                         margin: 20px 0;
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
+                        text-decoration: none;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
                         color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
 
-                    button:hover,
-                    button:focus {
+                    a:hover,
+                    a:focus {
                         background-color: $button-select-color;
                         transition: 350ms;
                     }
@@ -501,6 +504,9 @@
 
                 img {
                     width: 200px;
+                    border-radius: 50%;
+                    background-color: $shadow;
+                    transition: 500ms;
                 }
             }
         }
@@ -666,25 +672,24 @@
                         color: $letter-color;
                     }
 
-                    button {
+                    a {
                         width: 130px;
                         height: 35px;
                         margin: 20px 0;
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
+                        text-decoration: none;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
                         color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
 
-                    button:hover,
-                    button:focus {
+                    a:hover,
+                    a:focus {
                         background-color: $button-select-color;
                         transition: 350ms;
                     }
@@ -699,6 +704,9 @@
 
                 img {
                     width: 200px;
+                    border-radius: 50%;
+                    background-color: $shadow;
+                    transition: 500ms;
                 }
             }
         }
@@ -868,25 +876,24 @@
                         text-align: center;
                     }
 
-                    button {
+                    a {
                         width: 130px;
                         height: 35px;
                         margin: 20px 0;
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
+                        text-decoration: none;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
                         color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
 
-                    button:hover,
-                    button:focus {
+                    a:hover,
+                    a:focus {
                         background-color: $button-select-color;
                         transition: 350ms;
                     }
@@ -901,6 +908,9 @@
 
                 img {
                     width: 200px;
+                    border-radius: 50%;
+                    background-color: $shadow;
+                    transition: 500ms;
                 }
             }
         }
@@ -1066,25 +1076,24 @@
                         text-align: center;
                     }
 
-                    button {
+                    a {
                         width: 130px;
                         height: 35px;
                         margin: 20px 0;
                         font-family: $letter;
                         font-size: 15px;
                         display: flex;
+                        text-decoration: none;
                         align-items: center;
                         justify-content: center;
                         border-radius: 7px;
-                        border: none;
-                        outline: none;
                         color: $primary-color;
                         background-color: $button-color;
                         transition: 350ms;
                     }
 
-                    button:hover,
-                    button:focus {
+                    a:hover,
+                    a:focus {
                         background-color: $button-select-color;
                         transition: 350ms;
                     }
@@ -1099,6 +1108,9 @@
 
                 img {
                     width: 200px;
+                    border-radius: 50%;
+                    background-color: $shadow;
+                    transition: 500ms;
                 }
             }
         }

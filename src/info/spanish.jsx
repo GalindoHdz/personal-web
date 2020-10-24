@@ -9,6 +9,11 @@ export const spanish = {
         contact: 'Contacto',
     },
     footer: {
+        medium: 'https://medium.com/@galindohdz',
+        twitter: 'https://twitter.com/GalindoHdzEngin',
+        github: 'https://github.com/GalindoHdz',
+        linkedin: 'https://www.linkedin.com/in/GalindoHdz/',
+        instagram: 'https://www.instagram.com/Galindo_Hdz_Engin/',
         copy: 'Creado por Luis Antonio Galindo Hernández © ',
     },
     home: {
@@ -37,7 +42,7 @@ export const spanish = {
             ],
         },
         experience: {
-            title: 'Educacion y Experiencia',
+            title: 'Educación y Experiencia',
             card: [
                 {
                     key: '1',
