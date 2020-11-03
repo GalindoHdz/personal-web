@@ -1,4 +1,6 @@
-import image from '../assets/images/image-project.png';
+import personal_web from '../assets/images/projects/personal_web.png';
+import library_api from '../assets/images/projects/library-api.png';
+import image from '../assets/images/projects/image-project.png';
 
 export const spanish = {
     header: {
@@ -79,42 +81,42 @@ export const spanish = {
         list: [
             {
                 key: 1,
-                name: 'API-LIBRARY',
-                image: image,
+                name: 'PERSONAL-WEB',
+                image: personal_web,
                 URL: 'https://www.google.com.mx',
                 git: 'https://github.com/',
             },
             {
                 key: 2,
+                name: 'LIBRARY-API',
+                image: library_api,
+                URL: 'https://api-toth.herokuapp.com/graphql',
+                git: 'https://github.com/GalindoHdz/library-api',
+            },
+            {
+                key: 3,
                 name: 'WEB-APP-LIBRARY',
                 image: image,
                 URL: 'https://www.google.com.mx',
                 git: 'https://github.com/',
             },
             {
-                key: 3,
+                key: 4,
                 name: 'APP-LIBRARY',
                 image: image,
                 URL: 'https://www.google.com.mx',
                 git: 'https://github.com/',
             },
             {
-                key: 4,
+                key: 5,
                 name: 'API-SAC',
                 image: image,
                 URL: 'https://www.google.com.mx',
                 git: 'https://github.com/',
             },
             {
-                key: 5,
-                name: 'WEB-APP-SAC',
-                image: image,
-                URL: 'https://www.google.com.mx',
-                git: 'https://github.com/',
-            },
-            {
                 key: 6,
-                name: 'PERSONAL-WEB',
+                name: 'WEB-APP-SAC',
                 image: image,
                 URL: 'https://www.google.com.mx',
                 git: 'https://github.com/',

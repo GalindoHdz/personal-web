@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import me from '../assets/images/me.png';
 import profile from '../assets/images/profile.png';
-import cvs from '../assets/images/LuisGalindoCVS.pdf';
-import cve from '../assets/images/LuisGalindoCVE.pdf';
+import cvs from '../assets/docs/LuisGalindoCVS.pdf';
+import cve from '../assets/docs/LuisGalindoCVE.pdf';
 import { spanish } from '../info/spanish';
 import { english } from '../info/english';
 
